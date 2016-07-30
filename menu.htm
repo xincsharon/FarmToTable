@@ -1,0 +1,183 @@
+<!DOCTYPE html >
+<html lang="en" >
+<head>
+<meta charset="utf-8" />
+    <title>
+      i heart harvest
+    </title>
+     <link href="proj2title.css" rel="stylesheet">
+    <link rel="shortcut icon" href="beefavicon.ico" />
+    <link href="restaurant.css" rel="stylesheet">
+<script type="text/javascript">
+function basicPopup(url) {
+popupWindow = window.open('specials.htm','popUpWindow','height=600,width=1000,left=200,top=200,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no, status=yes')
+	}
+		function calculate() { var error = false; 
+		if (isNaN(document.forms[0].steak.value)) 
+		{ alert("A numeric value is required"); error = true; } 
+		else { 
+		var numberSteak = 
+		parseInt(document.forms[0].steak.value); }
+		
+		if (isNaN(document.forms[0].pork.value)) 
+		{ alert("A numeric value is required"); error = true; } 
+		else { 
+		var numberPork = 
+		parseInt(document.forms[0].pork.value); }
+		
+		if (isNaN(document.forms[0].squash.value)) 
+		{ alert("A numeric value is required"); error = true; } 
+		else { 
+		var numberSquash = 
+		parseInt(document.forms[0].squash.value); } 
+		
+		if (isNaN(document.forms[0].chicken.value)) 
+		{ alert("A numeric value is required"); error = true; } 
+		else { 
+		var numberChicken = 
+		parseInt(document.forms[0].chicken.value); } 
+		
+		if (isNaN(document.forms[0].burger.value)) 
+		{ alert("A numeric value is required"); error = true; } 
+		else { 
+		var numberBurger = 
+		parseInt(document.forms[0].burger.value); }
+		
+		if (!error) { total = ((numberSteak * 16.95) + 
+		(numberPork * 18.95) + (numberSquash * 10.95) 
+		+ (numberChicken * 14.95) + (numberBurger * 12.95)) * 1.0825; 
+		window.alert("Enjoy Your Meal! Please prepare $" + total.toFixed(2)) 
+		}}
+		
+		
+		
+		</script>
+		<style type="text/css">
+			.divRow{
+				width: 300px;
+				border:1px solid #012D36;
+				background-color: #739295;
+				font:bold 10pt sans-serif;
+				padding: 5px;
+				text-align:center;
+			}
+			.divRow input{
+				border:1px solid #012D36;
+			}
+		</style>
+</head>
+<body>
+<header>
+<h1>i heart harvest
+        </h1>
+</header>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+background-color:#4CAF50;
+}
+</style>
+<ul>
+  <li><a class="active" href="index.htm">Home</a></li>
+  <li><a href="menu.htm">Menu</a></li>
+  <li><a href="contact.htm">Contact</a></li>
+  <li><a href="about.htm">Our Story</a></li>
+  <li><a href="specials.htm" onclick="basicPopup(this.href);return false">Specials</a></li>
+  <li><a href="application.htm">Apply!</a></li>
+</ul>
+<h2>~ SEASONAL MENU ~</h2>
+	 <form>
+<table width="500" border="1" cellspacing="0" cellpadding="0" summary="Menu table and order form">
+  <caption>
+    Join us, or we'll join you! Offering take-out with a side of goodness.
+  </caption>
+  <tbody>
+    <tr>
+      <td>Entree</td>
+      <td>With Love</td>
+      <td>Price</td>
+      <td>Order</td>
+    </tr>
+    <tr>
+      <td><img src="steak.jpg" width="213" height="280" alt="steak dinner"/>
+      <br>Petite Sirloin on Sweet Potato Mash
+      </td>
+      <td>A delicately grilled and savory meal<br>from Bastrop Cattle Company.<br>Cattle are raised with loving care<br> on a grass fed diet. Cooked to your<br> preference with delicious chives.</td>
+      <td>$16.95</td>
+      <td>Quantity:<input type="text" name="steak" value="0"></td>
+    </tr>
+    <tr>
+      <td><img src="pork.jpg" width="260" height="260" alt="pork tenderloin dinner"/>
+      <br>Pork Tenderloin with Crisp and Tender Asparagus
+      </td>
+      <td>Our pork receives a life of pleasure rolling <br>in the mud and enjoying the fresh outdoors<br> on the farm of Peaceful Pork.<br> We never use any horomones or antibiotics<br> and provide an all organic diet.
+      </td>
+      <td>18.95</td>
+      <td>Quantity:<input type="text" name="pork" value="0">
+      </td>
+    </tr>
+    <tr>
+      <td><img src="squash.jpg" width="200" height="300" alt="baked butternut squash"/>
+      <br>Twice Baked Butternut Squash with Sage Yogurt
+      </td>
+      <td>Squash are in, and we give this traditional meal<br> a special taste of organic goat yogurt<br> from Swede Farm in Waller County, Texas.
+      </td>
+      <td>$10.95</td>
+      <td>Quantity:<input type="text" name="squash" value="0">
+      </td>
+    </tr>
+    <tr>
+      <td><img src="chickenbeet.jpg" width="300" height="213" alt="chicken dinner"/>
+      <br>Grilled Breast of Chicken and Beet Greens
+      </td>
+      <td>Springdale Farms provides local cage-free,<br> organic chickens who have been given<br> a full life of outdoor grubbing,<br> lots of exercise and GMO-Free feed.</td>
+      <td>$14.95</td>
+      <td>Quantity:<input type="text" name="chicken" value="0">
+      </td>
+    </tr>
+    <tr>
+      <td><img src="bison.jpg" width="300" height="200" alt="bison burger"/>
+      <br>Bison Burger con Guacamole
+      </td>
+      <td>From the amazing folks at Thunder Heart Bison<br> in San Antonio, we offer you a lower fat <br>option to the classic burger.<br> Ripe and lucious avocados, onions,<br> and tomatoes are fresh for the picking.<br> You're Welcome!</td>
+      <td>$12.95</td>
+      <td>Quantity:<input type="text" name="burger" value="0">
+      </td>
+    </tr>
+  </tbody>
+</table>
+<div style="text-align:right">
+  <input type="image" src="submit.jpg" onclick=calculate() border="0" height="50 width="50" alt="Submit" />
+  </div> 
+</form>
+</body>
+  <footer>
+  <br>
+  <img src="logo.jpg" alt="company logo">
+  <br>
+  Copyright © 2016 i heart harvest
+  </footer>
+  </html>
