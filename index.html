@@ -1,0 +1,105 @@
+<!DOCTYPE html >
+<html lang="en" data-ng-app="farmApp">
+<head>
+<meta charset="utf-8" />
+    <title>FarmTab</title>
+    <meta name="viewport" content="width=device-width, initialscale=1.0"/>
+<!--    <link rel="shortcut icon" href="images/beefavicon.ico" />-->
+<!--    <link href="restaurant.css" rel="stylesheet">-->
+    <link href="framework/css/bootstrap.min.css" rel="stylesheet"/>
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                            <!--This is the navigation bar header-->
+                            <div class="navbar-header">
+                                <!--The logo of the company is located at here.-->
+                                <img src="" class="navbar-brand" alt="Corporate logo">
+                                <!--Items in navigation bar will turn to a mobile drop down menu with a three lined icon at extra small sized device-->
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#comNav">
+                                    <span class="sr-only"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <!--This is to make the drop down menu at xs screen size to collapse. It will be displayed in one line at other screen sizes.-->
+                            <div class="collapse navbar-collapse" id="comNav">
+                            <!--Navigation bar items bullet is removed, and is arranged to the right.-->
+
+                                <ul class="list-unstyled nav navbar-nav navbar-right">
+                                    <li>
+                                        <a href="#!About">About</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Profile</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!Promotion">Promotion</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!Catalogue">Product</a>
+                                    </li>
+                                    <!--User sign up icon and link-->
+                                    <li>
+                                        <a href="#!SignUp">
+                                            <span class="glyphicon glyphicon-user"></span>
+                                            Sign Up
+                                        </a>
+                                    </li>
+                                    <!--User log in icon and link-->
+                                    <li>
+                                        <a href="#">
+                                            <span class="glyphicon glyphicon-log-in"></span>
+                                            Login
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+
+            </div>         
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col=sm-12 col-md-12 col-lg-12">
+                <br/><!-- need to replace these 3 br with paddings in css-->
+                <br/>
+                <br/>
+                <div data-ng-view></div>
+                
+                
+            </div>
+        </div>
+        <div class="row">
+            <footer class="text-center">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <p>FarmTab</p>
+                    <a href="#">Disclaimer</a>
+                    <a href="#!whatsfarmtab">What's FarmTab?</a>
+                    <a href="#!Contact">Contact</a>
+                    <a href="#">Policy</a>
+                    <p>Copyright © 2018 FarmTab</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    
+        <!-- jQuery - required for Boostrap's JavaScript plugins-->
+        <script src="framework/js/jquery.min.js"></script>
+        <!-- All Bootstrap plug-ins file-->
+        <script src="framework/js/bootstrap.min.js"></script>
+        <!--Basic AngularJS-->
+        <script src="framework/js/angular.min.js"></script>
+        <!--AngularJS -->
+        <script src="framework/js/angular.js"></script>
+        <!--Angular route -->
+        <script src="framework/js/angular-route.js"></script>
+        <!-- Controller used -->
+        <script src="framework/js/farmTabApp.js"></script>
+</body>   
+  
+  </html>
